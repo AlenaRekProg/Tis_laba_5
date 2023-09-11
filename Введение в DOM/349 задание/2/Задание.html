@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+
+		<input id="elem" value="text">
+		<p id="abz">Абзац</p>
+		<input id="button" type="submit">
+
+        <h1>Задания Рекунковой Алёны</h1>
+        <h6>Прости господи</h6>
+		
+		<script>
+
+			let button = document.querySelector('#button');
+			button.addEventListener('click', func1);
+
+			function func1() {
+				let elem = document.querySelector('#elem');
+				let abz = document.querySelector('#abz');
+				console.log(elem.value);
+				abz.textContent = elem.value;
+	}
+		</script>
+	</body>
+</html>
